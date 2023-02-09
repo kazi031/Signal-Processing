@@ -1,0 +1,15 @@
+clear all;
+clc;
+t = linspace(0,1,1000);
+fm = 5;
+y = sin(2*pi*fm*t);
+subplot(3,1,1);
+plot(t,y);
+fc = 30;
+y2 = sin(2*pi*fc*t);
+subplot(3,1,2);
+plot(t,y2);
+m = 1;
+mod_sig = (1+y).*y2;
+subplot(3,1,3);
+plot(t,mod_sig);
